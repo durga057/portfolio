@@ -1,0 +1,86 @@
+.projects-section {
+  padding: 60px 20px;
+  background-color: #f5f7fa; /* soft bluish-gray */
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 32px;
+  color: #1f2937; /* dark slate */
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Full card layout */
+.project-card {
+  background-color: #ffffff;
+  width: 300px;
+  height: 100%; /* allow content to grow */
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* 📸 Image area */
+.project-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background-color: #eaeaea;
+}
+
+/* Content area */
+.project-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+/* 🏷 Title */
+.project-card h3 {
+  font-size: 18px;
+  color: #ff7a00; /* warm professional orange */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* 📝 Description and Tech */
+.project-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.project-card p strong {
+  color: #1f2937;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+}
