@@ -5,6 +5,8 @@ import aws from '../assets/certificates/aws-data-engineering-virtual.jpg';
 import googleAndroid from '../assets/certificates/google-android.jpg';
 import python from '../assets/certificates/python.jpg';
 import teachnook from '../assets/certificates/teachnook-internship.jpg';
+import sql from '../assets/certificates/sql.jpg';
+import reactCert from '../assets/certificates/react-cert.jpg';
 
 function Certificates() {
   const certificates = [
@@ -27,6 +29,14 @@ function Certificates() {
     {
       title: 'Web Development Internship – Teachnook',
       image: teachnook,
+    },
+    {
+      title: 'SQL (Intermediate) – HackerRank',
+      image: sql,
+    },
+    {
+      title: 'Frontend Developer (React) – HackerRank',
+      image: reactCert,
     },
   ];
 

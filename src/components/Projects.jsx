@@ -4,6 +4,7 @@ import parkingImg from '../assets/projects/parking.jpg';
 import rentImg from '../assets/projects/rent2ride.jpg';
 import tourismImg from '../assets/projects/tourism.png';
 import iotImg from '../assets/projects/iotcap.png';
+import outpassImg from '../assets/projects/outpassImg.png';
 
 function Projects() {
   const projects = [
@@ -30,6 +31,12 @@ function Projects() {
       description: 'IoT-based cap that detects obstacles and gives real-time audio alerts using sensors.',
       tech: 'Arduino, Python, IoT Sensors',
       image: iotImg,
+    },
+    {
+      title: 'Digital Outpass System',
+      description: 'A web-based system that allows students to request outpasses digitally with admin approval and tracking.',
+      tech: 'React, Node.js, MongoDB (MERN Stack)',
+      image: outpassImg,
     }
   ];
 
