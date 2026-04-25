@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2026 S. Durga Prasad — All Rights Reserved</p>
+      <p>© 2025 S. Durga Prasad — All Rights Reserved</p>
 
       <div className="social-icons">
         <a href="https://github.com/durgaprasad2595" target="_blank" rel="noopener noreferrer">
