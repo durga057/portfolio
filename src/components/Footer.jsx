@@ -7,7 +7,7 @@ function Footer() {
       <p>© 2025 S. Durga Prasad — All Rights Reserved</p>
 
       <div className="social-icons">
-        <a href="https://github.com/durgaprasad2595" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/durga057/" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
         <a href="https://www.linkedin.com/in/durgaprasadsuravarapu/" target="_blank" rel="noopener noreferrer">

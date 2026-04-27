@@ -20,7 +20,7 @@ function Projects() {
       description: 'Platform for two-wheeler rental with login, pricing, booking, and vehicle tracking.',
       tech: 'Java, MySQL, HTML/CSS',
       image: rentImg,
-      github: 'https://github.com/durgaprasad2595/Rent2Ride',
+      github: 'https://github.com/durga057/Rent2Ride',
     },
     {
       title: 'Travel & Tourism Website',
@@ -34,14 +34,14 @@ function Projects() {
       description: 'IoT-based cap that detects obstacles and gives real-time audio alerts using sensors.',
       tech: 'Arduino, Python, IoT Sensors',
       image: iotImg,
-      github: 'https://github.com/durgaprasad2595/Object-Detection-for-the-Blind',
+      github: 'https://github.com/durga057/Object-Detection-for-the-Blind',
     },
     {
       title: 'Digital Outpass System',
       description: 'A web-based system that allows students to request outpasses digitally with admin approval and tracking.',
       tech: 'React, Node.js, MongoDB (MERN Stack)',
       image: outpassImg,
-      github: 'https://github.com/durgaprasad2595/Outpass-System',
+      github: 'https://github.com/durga057/outpass',
     }
   ];
 

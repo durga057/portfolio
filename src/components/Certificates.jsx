@@ -12,6 +12,14 @@ import reactCert from '../assets/certificates/react-cert.jpg';
 function Certificates() {
   const certificates = [
     {
+      title: 'SQL (Intermediate) – HackerRank',
+      image: sql,
+    },
+    {
+      title: 'Frontend Developer (React) – HackerRank',
+      image: reactCert,
+    },
+    {
       title: 'AI-ML Internship – EduSkills & IIT Bombay',
       image: aiml,
     },
@@ -31,14 +39,7 @@ function Certificates() {
       title: 'Web Development Internship – Teachnook',
       image: teachnook,
     },
-    {
-      title: 'SQL (Intermediate) – HackerRank',
-      image: sql,
-    },
-    {
-      title: 'Frontend Developer (React) – HackerRank',
-      image: reactCert,
-    },
+
   ];
 
   return (

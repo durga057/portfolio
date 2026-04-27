@@ -7,26 +7,26 @@ function ContactForm() {
 
       <form
         className="contact-form"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdIftEN9Bvh5gzeVK8uB9E_ie0FXxYGxxmHmEYpB5N-y-sFUw/formResponse"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSfQd09xOjUSKg_cMR7l_-ulrm-BbV86D93LwNdznksPb5og0Q/formResponse"
         method="POST"
         target="_blank"
       >
         <input
           type="text"
-          name="entry.221568427"
+          name="entry.2005620554"
           placeholder="Your Name"
           required
         />
 
         <input
           type="email"
-          name="entry.571016597"
+          name="entry.1045781291"
           placeholder="Your Email"
           required
         />
 
         <textarea
-          name="entry.501770643"
+          name="entry.839337160"
           placeholder="Your Message"
           rows="5"
           required
