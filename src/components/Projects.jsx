@@ -5,15 +5,30 @@ import rentImg from '../assets/projects/rent2ride.jpg';
 import tourismImg from '../assets/projects/tourism.png';
 import iotImg from '../assets/projects/iotcap.png';
 import outpassImg from '../assets/projects/outpassImg.png';
+import damageClaimImg from '../assets/projects/damageClaimImg.png';
 
 function Projects() {
   const projects = [
+    {
+      title: 'Digital Outpass System',
+      description: 'A web-based system that allows students to request outpasses digitally with admin approval and tracking.',
+      tech: 'React, Node.js, MongoDB (MERN Stack)',
+      image: outpassImg,
+      github: 'https://durga057.github.io/outpass/',
+    },
+    {
+      title: 'Damage Claim Verification System',
+      description: 'A multimodal AI-based system that verifies insurance damage claims by analyzing both images and textual evidence to detect fraudulent claims and assist in accurate claim processing.',
+      tech: 'Python, OpenCV, Pandas, NumPy, Scikit-learn, Deep Learning',
+      image: damageClaimImg,
+      github: 'https://github.com/durga057/Multi_Modal_Evidence_Review',
+    },
     {
       title: 'Smart Car Parking System',
       description: 'Computer vision-based system to detect vehicle occupancy and slot availability using image input.',
       tech: 'Python, OpenCV, Flask, React',
       image: parkingImg,
-      github: 'https://github.com/durgaprasad2595/Smart-Car-Parking-System',
+      github: '#',
     },
     {
       title: 'Rent2Ride – Online Bike Rental',
@@ -35,14 +50,8 @@ function Projects() {
       tech: 'Arduino, Python, IoT Sensors',
       image: iotImg,
       github: 'https://github.com/durga057/Object-Detection-for-the-Blind',
-    },
-    {
-      title: 'Digital Outpass System',
-      description: 'A web-based system that allows students to request outpasses digitally with admin approval and tracking.',
-      tech: 'React, Node.js, MongoDB (MERN Stack)',
-      image: outpassImg,
-      github: 'https://github.com/durga057/outpass',
     }
+
   ];
 
   return (
@@ -52,13 +61,18 @@ function Projects() {
         {projects.map((proj, index) => (
           <div key={index} className="project-card">
             <img src={proj.image} alt={proj.title} className="project-image" />
-            <h3>{proj.title}</h3>
-            <p>{proj.description}</p>
-            {/* github icon with source code link */}
-            <a href={proj.github} target="_blank" rel="noopener noreferrer">
-              <FaGithub />
-            </a>
-            <p><strong>Tech Used:</strong> {proj.tech}</p>
+            <div className="project-content">
+              <div className="project-info">
+                <h3>{proj.title}</h3>
+                <p className="project-description">{proj.description}</p>
+              </div>
+              <div className="project-footer">
+                <a href={proj.github} className="github-link" target="_blank" rel="noopener noreferrer">
+                  <FaGithub />
+                </a>
+                <p className="tech-used"><strong>Tech Used:</strong> {proj.tech}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>

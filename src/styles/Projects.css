@@ -22,13 +22,13 @@
 .project-card {
   background-color: #ffffff;
   width: 300px;
-  height: 100%; /* allow content to grow */
+  min-height: 520px; /* Ensures all cards have equal minimum height */
   display: flex;
   flex-direction: column;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -51,6 +51,46 @@
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
+}
+
+/* Info container (title & description) */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Footer container (github & tech stack) */
+.project-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px; /* Fixed height for footer to align elements */
+  margin-top: 15px;
+}
+
+/* GitHub Link */
+.github-link {
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 12px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-link:hover {
+  color: #ff7a00;
+  transform: scale(1.12);
+}
+
+/* Tech Used text adjustment */
+.tech-used {
+  margin: 0 !important;
+  font-size: 13px !important;
+  color: #555555 !important;
 }
 
 /* 🏷 Title */
@@ -82,5 +122,6 @@
 
   .project-card {
     width: 90%;
+    min-height: auto; /* Reset minimum height on mobile so they fit content perfectly */
   }
 }
