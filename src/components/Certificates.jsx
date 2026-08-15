@@ -9,7 +9,7 @@ import teachnook from '../assets/certificates/teachnook-internship.jpg';
 import sql from '../assets/certificates/sql.jpg';
 import reactCert from '../assets/certificates/react-cert.jpg';
 import servicenow from '../assets/certificates/servicenow_certificate.jpg';
-import devops_cloud from '../assets/certificates/Devops_Cloud_Automation_Virtual.jpg';
+import devops_cloud from '../assets/certificates/DevOps_Cloud_Automation_Virtual.jpg';
 import orchestrate2026 from '../assets/certificates/Contest_01.png';
 import servicenow_csa from '../assets/certificates/csa-global-certification.jpg';
 
