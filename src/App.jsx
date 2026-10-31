@@ -4,6 +4,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
+import Experience from "./components/Experience.jsx";
 import Certificates from "./components/Certificates.jsx";
 import ContactForm from "./components/ContactForm.jsx";
 
@@ -16,6 +17,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Experience />
         <Certificates />
         <ContactForm />
       </main>
