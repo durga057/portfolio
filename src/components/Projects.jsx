@@ -1,5 +1,5 @@
 import '../styles/Projects.css';
-import { FiArrowUpRight, FiGithub, FiExternalLink } from 'react-icons/fi';
+import { FiArrowUpRight, FiGithub } from 'react-icons/fi';
 import parkingImg from '../assets/projects/parking.jpg';
 import rentImg from '../assets/projects/rent2ride.jpg';
 import tourismImg from '../assets/projects/tourism.png';
