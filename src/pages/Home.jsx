@@ -1,4 +1,4 @@
-import { FiArrowDownRight, FiArrowUpRight, FiDownload, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiArrowDownRight, FiArrowUpRight, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import "./Home.css";
 
 export default function Home() {
