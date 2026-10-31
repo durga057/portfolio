@@ -1,76 +1,32 @@
 import '../styles/Skills.css';
 import { FaHackerrank } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
+import { FiCode, FiDatabase, FiLayers, FiTool, FiArrowUpRight } from 'react-icons/fi';
 
-function Skills() {
-  const skillCategories = [
-    {
-      title: "Frontend Development",
-      skills: ["React", "HTML5", "CSS3", "JavaScript", "Bootstrap", "Tailwind CSS"]
-    },
-    {
-      title: "Backend & Databases",
-      skills: ["Node.js", "Express.js", "Java", "Python", "MySQL", "MongoDB"]
-    },
-    {
-      title: "Tools & Core Skills",
-      skills: ["Git", "GitHub", "Data Structures", "Algorithms", "Object-Oriented Programming", "REST APIs"]
-    }
-  ];
+const categories = [
+  { icon: FiCode, title: "Programming", desc: "Languages & fundamentals", skills: ["Java", "Python", "JavaScript", "SQL", "Object-Oriented Programming"] },
+  { icon: FiLayers, title: "Frontend", desc: "Interfaces & experience", skills: ["React", "HTML5", "CSS3", "Bootstrap", "Tailwind CSS"] },
+  { icon: FiDatabase, title: "Backend & data", desc: "Services & persistence", skills: ["Node.js", "Express.js", "MySQL", "MongoDB", "REST APIs"] },
+  { icon: FiTool, title: "Tools & concepts", desc: "Building & collaboration", skills: ["Git", "GitHub", "Data Structures", "Algorithms", "ServiceNow"] }
+];
 
+export default function Skills() {
   return (
-    <section className="skills-section" id="skills">
-      <h2 className="skills-title">Skills & Problem Solving</h2>
-
-      <div className="skills-container">
+    <section className="section skills-section" id="skills">
+      <div className="container">
+        <div className="section-kicker">MY TOOLKIT</div>
+        <div className="skills-title-row"><div><h2 className="section-heading">Skills that turn ideas<br /><span className="accent-text">into software.</span></h2><p className="section-lead">A growing toolkit across application development, backend engineering and problem-solving.</p></div><span className="skills-side-note mono">LEARN · BUILD · REFINE</span></div>
         <div className="skills-grid">
-          {skillCategories.map((category, idx) => (
-            <div className="skills-category" key={idx}>
-              <h3 className="skills-category-title">{category.title}</h3>
-              <div className="skills-list">
-                {category.skills.map((skill, index) => (
-                  <span className="skill-tag" key={index}>{skill}</span>
-                ))}
-              </div>
-            </div>
-          ))}
+          {categories.map(({icon: Icon,title,desc,skills},i) => <article className="skill-card surface" key={title}><div className="skill-card-top"><span className="skill-icon"><Icon /></span><span className="mono skill-count">0{i+1}</span></div><h3>{title}</h3><p>{desc}</p><div className="skill-tags">{skills.map(s=><span key={s}>{s}</span>)}</div></article>)}
         </div>
-
-        <div className="coding-profiles-wrapper">
-          <h3>Coding Profiles</h3>
-          <div className="profiles-flex">
-            <a
-              href="https://leetcode.com/u/XWwLbeACQB/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="profile-card"
-            >
-              <SiLeetcode className="profile-icon" style={{ color: '#FFA116' }} />
-              <div className="profile-card-title">LeetCode</div>
-              <div className="profile-card-desc">
-                Consistent practice in Data Structures, Algorithms, and logic building.
-              </div>
-              <div className="profile-stats">Problem Solving</div>
-            </a>
-
-            <a
-              href="https://www.hackerrank.com/profile/durgaprasadsura3"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="profile-card"
-            >
-              <FaHackerrank className="profile-icon" style={{ color: '#00EA64' }} />
-              <div className="profile-card-title">HackerRank</div>
-              <div className="profile-card-desc">
-                Verified Skills and Certifications in React, SQL, and other core concepts.
-              </div>
-              <div className="profile-stats">Certified Skills</div>
-            </a>
+        <div className="coding-row">
+          <div><span className="section-kicker">PROBLEM SOLVING</span><h3>Practising the fundamentals.</h3><p className="section-lead">I use coding platforms to strengthen my data structures, algorithms and programming foundations.</p></div>
+          <div className="coding-links">
+            <a href="https://leetcode.com/u/XWwLbeACQB/" target="_blank" rel="noreferrer"><SiLeetcode /><span><b>LeetCode</b><small>Data structures & algorithms</small></span><FiArrowUpRight /></a>
+            <a href="https://www.hackerrank.com/profile/durgaprasadsura3" target="_blank" rel="noreferrer"><FaHackerrank /><span><b>HackerRank</b><small>Programming & certifications</small></span><FiArrowUpRight /></a>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-export default Skills;
